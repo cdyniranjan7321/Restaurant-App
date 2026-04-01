@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, Menu, X, UtensilsCrossed } from "lucide-react";
 import { useCart } from "@/context/CartContext";
@@ -20,7 +21,7 @@ const UserNavbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8">
         <Link to="/" className="flex items-center gap-2">
           <UtensilsCrossed className="h-6 w-6 text-accent" />
-          <span className="font-display text-xl font-bold text-foreground">La Maison</span>
+          <span className="font-display text-xl font-bold text-foreground">Rasa</span>
         </Link>
 
         {/* Desktop nav */}
