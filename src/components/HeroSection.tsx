@@ -35,7 +35,7 @@ const HeroSection = () => {
                   Explore Menu <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-cream/30 text-cream hover:bg-cream/10">
+              <Button asChild variant="outline" size="lg" className="border-cream/30 text-green-600 hover:bg-cream/10">
                 <Link to="/menu">Reserve a Table</Link>
               </Button>
             </div>
