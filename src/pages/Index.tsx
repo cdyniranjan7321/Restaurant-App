@@ -60,8 +60,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gradient-dark py-12 text-cream">
         <div className="container mx-auto px-4 text-center lg:px-8">
-          <h3 className="mb-2 font-display text-2xl font-bold">La Maison</h3>
-          <p className="mb-4 text-sm text-cream-dark">123 Gourmet Avenue, Culinary District</p>
+          <h3 className="mb-2 font-display text-2xl font-bold">Rasa</h3>
+          <p className="mb-4 text-sm text-cream-dark">Pokhara-9 Chipledhunga, kaski District</p>
           <p className="text-xs text-cream-dark">© 2026 La Maison. All rights reserved.</p>
         </div>
       </footer>
