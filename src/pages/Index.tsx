@@ -75,27 +75,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Customer Reviews Section */} 
-<section className="py-16">
-  <div className="container mx-auto px-4 lg:px-8">
-    <div className="text-center mb-10">
-      <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
-        What Our Guests Say
-      </h2>
-      <p className="mt-2 text-muted-foreground">Loved by food lovers across the city</p>
-    </div>
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {[
-        { name: "Sarah Johnson", rating: 5, text: "Amazing ambiance and even better food! The momos are a must-try.", date: "2 days ago" },
-        { name: "Mike Chen", rating: 5, text: "Best restaurant in Pokhara! Great service and authentic flavors.", date: "1 week ago" },
-        { name: "Priya Sharma", rating: 4, text: "Beautiful presentation and delicious fusion dishes. Will come back!", date: "3 days ago" },
-      ].map((review, i) => (
-        <div key={i} className="rounded-lg border bg-card p-6 shadow-sm">
-          <div className="flex items-center gap-2 mb-3">
-            {[...Array(5)].map((_, j) => (
-              <span key={j} className={`text-lg ${j < review.rating ? 'text-yellow-500' : 'text-gray-300'}`}>★</span>
-            ))}
-          </div>
+        {/* Customer Reviews Section */} 
+         <section className="py-16">
+           <div className="container mx-auto px-4 lg:px-8">
+            <div className="text-center mb-10">
+              <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
+                What Our Guests Say
+              </h2>
+               <p className="mt-2 text-muted-foreground">Loved by food lovers across the city</p>
+            </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+           {[
+              { name: "Sarah Johnson", rating: 5, text: "Amazing ambiance and even better food! The momos are a must-try.", date: "2 days ago" },
+              { name: "Niranjan Chaudhary", rating: 5, text: "Best restaurant in Pokhara! Great service and authentic flavors.", date: "1 week ago" },
+              { name: "Raisha Pradhan", rating: 4, text: "Beautiful presentation and delicious fusion dishes. Will come back!", date: "3 days ago" },
+              ].map((review, i) => (
+           <div key={i} className="rounded-lg border bg-card p-6 shadow-sm">
+             <div className="flex items-center gap-2 mb-3">
+              {[...Array(5)].map((_, j) => (
+               <span key={j} className={`text-lg ${j < review.rating ? 'text-yellow-500' : 'text-gray-300'}`}>★</span>
+             ))}
+            </div>
           <p className="text-foreground mb-4">"{review.text}"</p>
           <div>
             <p className="font-semibold text-foreground">{review.name}</p>
