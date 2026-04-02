@@ -62,7 +62,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center lg:px-8">
           <h3 className="mb-2 font-display text-2xl font-bold">Rasa</h3>
           <p className="mb-4 text-sm text-cream-dark">Pokhara-9 Chipledhunga, kaski District</p>
-          <p className="text-xs text-cream-dark">© 2026 La Maison. All rights reserved.</p>
+          <p className="text-xs text-cream-dark">© 2026 Rasa. All rights reserved.</p>
         </div>
       </footer>
     </div>
