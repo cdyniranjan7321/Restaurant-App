@@ -106,6 +106,36 @@ const Index = () => {
       </div>
      </div>
     </section>
+      
+          {/* Catering & Events Section */}
+            <section className="py-16 bg-secondary/20">
+              <div className="container mx-auto px-4 lg:px-8">
+                <div className="text-center mb-10">
+                  <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
+                    Private Events & Catering
+                  </h2>
+               <p className="mt-2 text-muted-foreground">Make your special moments unforgettable</p>
+              </div>
+             <div className="grid gap-8 md:grid-cols-3">
+            {[
+              { title: "Birthday Parties", desc: "Custom menus and decorations", icon: "🎂" },
+              { title: "Corporate Events", desc: "Professional catering service", icon: "💼" },
+              { title: "Wedding Receptions", desc: "Elegant dining experience", icon: "💒" },
+             ].map((event, i) => (
+             <div key={i} className="text-center">
+              <div className="text-4xl mb-3">{event.icon}</div>
+              <h3 className="font-semibold text-foreground mb-2">{event.title}</h3>
+              <p className="text-sm text-muted-foreground">{event.desc}</p>
+             </div>
+           ))}
+          </div>
+        <div className="text-center mt-8">
+          <Button variant="outline" asChild>
+           <Link to="/contact">Inquire Now →</Link>
+          </Button>
+        </div>
+      </div>
+    </section>
 
       {/* Footer */}
       <footer className="bg-gradient-dark py-12 text-cream">
