@@ -38,23 +38,22 @@ const Index = () => {
       </section>
 
         {/* Add after Hero section or before Popular Dishes */}
-
-<section className="relative overflow-hidden bg-gradient-to-r from-primary/90 to-accent/90 py-12">
-  <div className="container mx-auto px-4 text-center lg:px-8">
-    <span className="inline-block rounded-full bg-white/20 px-3 py-1 text-sm font-semibold text-white mb-4">
-      Chef's Special
-    </span>
-    <h2 className="font-display text-3xl font-bold text-white md:text-4xl mb-3">
-      {menuItems.find(i => i.isPopular)?.name || "Signature Dish of the Day"}
-    </h2>
-    <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-      {menuItems.find(i => i.isPopular)?.description || "Experience our chef's masterpiece crafted with premium ingredients"}
-    </p>
-    <Button variant="secondary" asChild>
-      <Link to="/menu">Order Now →</Link>
-    </Button>
-  </div>
-</section>
+         <section className="relative overflow-hidden bg-gradient-to-r from-primary/90 to-accent/90 py-12">
+           <div className="container mx-auto px-4 text-center lg:px-8">
+             <span className="inline-block rounded-full bg-white/20 px-3 py-1 text-sm font-semibold text-white mb-4">
+               Chef's Special
+             </span>
+             <h2 className="font-display text-3xl font-bold text-white md:text-4xl mb-3">
+               {menuItems.find(i => i.isPopular)?.name || "Signature Dish of the Day"}
+             </h2>
+            <p className="text-white/90 mb-6 max-w-2xl mx-auto">
+            {menuItems.find(i => i.isPopular)?.description || "Experience our chef's masterpiece crafted with premium ingredients"}
+            </p>
+              <Button variant="secondary" asChild>
+               <Link to="/menu">Order Now →</Link>
+              </Button>
+            </div>
+          </section>
 
       {/* Popular dishes */}
       <section className="py-16">
