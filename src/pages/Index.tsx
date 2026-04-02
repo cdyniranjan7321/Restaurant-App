@@ -1,3 +1,4 @@
+
 import HeroSection from "@/components/HeroSection";
 import UserNavbar from "@/components/UserNavbar";
 import MenuCard from "@/components/MenuCard";
