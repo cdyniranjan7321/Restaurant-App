@@ -5,7 +5,7 @@ import MenuCard from "@/components/MenuCard";
 import { useMenu } from "@/context/MenuContext";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, Leaf, Award } from "lucide-react";
+import { ArrowRight, Clock, Leaf, Award, UtensilsCrossed } from "lucide-react";
 
 const Index = () => {
   const { menuItems } = useMenu();
@@ -136,6 +136,67 @@ const Index = () => {
         </div>
       </div>
     </section>
+
+            {/* Newsletter / Offers Section */}
+              <section className="py-16 bg-primary text-primary-foreground">
+               <div className="container mx-auto px-4 text-center lg:px-8">
+                <h2 className="font-display text-3xl font-bold mb-3">Get 10% Off Your First Order</h2>
+                 <p className="mb-6 opacity-90">Subscribe to receive exclusive offers and updates</p>
+                  <form className="flex max-w-md mx-auto flex-col gap-3 sm:flex-row">
+                   <input 
+                     type="email" 
+                     placeholder="Enter your email" 
+                     className="flex-1 rounded-lg px-4 py-2 text-foreground"
+                     required
+                    />
+                   <Button type="submit" variant="secondary" className="whitespace-nowrap">
+                      Subscribe
+                   </Button>
+                  </form>
+              </div>
+             </section>
+
+              {/* Location & Hours Section */}
+             <section className="py-16">
+  <div className="container mx-auto px-4 lg:px-8">
+    <div className="grid gap-8 lg:grid-cols-2">
+      <div>
+        <h2 className="font-display text-3xl font-bold text-foreground mb-6">
+          Visit Us
+        </h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="font-semibold text-foreground">Address</h3>
+            <p className="text-muted-foreground">Pokhara-9 Chipledhunga, Kaski District<br />Nepal</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-foreground">Hours</h3>
+            <p className="text-muted-foreground">Monday - Sunday: 11:00 AM - 10:00 PM</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-foreground">Contact</h3>
+            <p className="text-muted-foreground">📞 +977 9869148791<br />✉️ info@rasa.com.np</p>
+          </div>
+        </div>
+      </div>
+      <div className="h-64 rounded-lg bg-gray-200 lg:h-auto">
+        {/* Add Google Maps integration here */}
+        <div className="flex h-full items-center justify-center text-muted-foreground">
+          Map Integration
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div className="fixed bottom-4 right-4 z-40 md:hidden">
+  <Button className="rounded-full shadow-lg bg-primary hover:bg-primary/90">
+    <Link to="/menu" className="flex items-center gap-2">
+      <UtensilsCrossed className="h-4 w-4" />
+      Order Online
+    </Link>
+  </Button>
+</div>
 
       {/* Footer */}
       <footer className="bg-gradient-dark py-12 text-cream">
