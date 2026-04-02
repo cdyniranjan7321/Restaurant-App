@@ -102,10 +102,10 @@ const Index = () => {
             <p className="text-xs text-muted-foreground">{review.date}</p>
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+       ))}
+      </div>
+     </div>
+    </section>
 
       {/* Footer */}
       <footer className="bg-gradient-dark py-12 text-cream">
