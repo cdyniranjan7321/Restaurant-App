@@ -158,14 +158,14 @@ const Index = () => {
 
               {/* Location & Hours Section */}
              <section className="py-16">
-  <div className="container mx-auto px-4 lg:px-8">
-    <div className="grid gap-8 lg:grid-cols-2">
-      <div>
-        <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-          Visit Us
-        </h2>
-        <div className="space-y-4">
-          <div>
+               <div className="container mx-auto px-4 lg:px-8">
+                <div className="grid gap-8 lg:grid-cols-2">
+               <div>
+               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
+                Visit Us
+               </h2>
+              <div className="space-y-4">
+            <div>
             <h3 className="font-semibold text-foreground">Address</h3>
             <p className="text-muted-foreground">Pokhara-9 Chipledhunga, Kaski District<br />Nepal</p>
           </div>
@@ -189,14 +189,15 @@ const Index = () => {
   </div>
 </section>
 
-<div className="fixed bottom-4 right-4 z-40 md:hidden">
-  <Button className="rounded-full shadow-lg bg-primary hover:bg-primary/90">
-    <Link to="/menu" className="flex items-center gap-2">
-      <UtensilsCrossed className="h-4 w-4" />
-      Order Online
-    </Link>
-  </Button>
-</div>
+     {/* Quick Order Online Banner( For delivery ) */}
+  <div className="fixed bottom-4 right-4 z-40 md:hidden">
+     <Button className="rounded-full shadow-lg bg-primary hover:bg-primary/90">
+        <Link to="/menu" className="flex items-center gap-2">
+        <UtensilsCrossed className="h-4 w-4" />
+          Order Online
+        </Link>
+    </Button>
+   </div>
 
       {/* Footer */}
       <footer className="bg-gradient-dark py-12 text-cream">
