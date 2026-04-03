@@ -1,3 +1,4 @@
+
 import AdminLayout from "@/components/AdminLayout";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -12,19 +13,19 @@ const AdminSettings = () => {
       <div className="max-w-2xl space-y-6 rounded-lg border border-border bg-card p-6 shadow-sm">
         <div>
           <label className="mb-1 block text-sm font-medium text-foreground">Restaurant Name</label>
-          <Input defaultValue="La Maison" />
+          <Input defaultValue="Rasa" />
         </div>
         <div>
           <label className="mb-1 block text-sm font-medium text-foreground">Address</label>
-          <Input defaultValue="123 Gourmet Avenue, Culinary District" />
+          <Input defaultValue="Pokhara-9 Chipledhunga, kaski District" />
         </div>
         <div>
           <label className="mb-1 block text-sm font-medium text-foreground">Phone</label>
-          <Input defaultValue="+1 (555) 123-4567" />
+          <Input defaultValue="9869148791" />
         </div>
         <div>
           <label className="mb-1 block text-sm font-medium text-foreground">Email</label>
-          <Input defaultValue="info@lamaison.com" />
+          <Input defaultValue="info@rasa.com.np" />
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div>
