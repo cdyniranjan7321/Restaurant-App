@@ -322,7 +322,7 @@ const Reservation = () => {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Email</p>
-                  <p className="text-muted-foreground">reservations@rasa.com.np</p>
+                  <p className="text-muted-foreground">info@rasa.com.np</p>
                 </div>
               </div>
             </div>
