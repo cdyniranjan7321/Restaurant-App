@@ -170,14 +170,56 @@ const Index = () => {
   </div>
 </section>
 
-      {/* Footer */}
-      <footer className="bg-gradient-dark py-12 text-cream">
-        <div className="container mx-auto px-4 text-center lg:px-8">
-          <h3 className="mb-2 font-display text-2xl font-bold">Rasa</h3>
-          <p className="mb-4 text-sm text-cream-dark">Pokhara-9 Chipledhunga, kaski District</p>
-          <p className="text-xs text-cream-dark">© 2026 Rasa. All rights reserved.</p>
+     {/* Footer */}
+<footer className="bg-gradient-dark pt-12 text-cream">
+  {/* Newsletter Section inside footer */}
+  <div className="container mx-auto px-4 lg:px-8">
+    <div className="mb-12 rounded-xl bg-primary/20 p-8 text-center backdrop-blur-sm">
+      <h3 className="font-display text-2xl font-bold mb-2">Get 10% Off Your First Order</h3>
+      <p className="mb-6 text-cream-dark">Subscribe to receive exclusive offers and updates</p>
+      <form className="flex max-w-md mx-auto flex-col gap-3 sm:flex-row">
+        <input 
+          type="email" 
+          placeholder="Enter your email" 
+          className="flex-1 rounded-lg px-4 py-2 text-foreground"
+          required
+        />
+        <Button type="submit" variant="secondary" className="whitespace-nowrap">
+          Subscribe
+        </Button>
+      </form>
+    </div>
+  </div>
+
+  {/* Main Footer Content */}
+  <div className="container mx-auto px-4 lg:px-8">
+    <div className="grid gap-8 mb-8 md:grid-cols-3">
+      <div>
+        <h3 className="mb-2 font-display text-xl font-bold">Rasa</h3>
+        <p className="text-sm text-cream-dark">Pokhara-9 Chipledhunga, kaski District</p>
+      </div>
+      <div>
+        <h4 className="font-semibold mb-2">Quick Links</h4>
+        <ul className="space-y-1 text-sm text-cream-dark">
+          <li><Link to="/menu" className="hover:text-cream">Menu</Link></li>
+          <li><Link to="/menu" className="hover:text-cream">Reservations</Link></li>
+          <li><Link to="/contact" className="hover:text-cream">Contact</Link></li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-semibold mb-2">Follow Us</h4>
+        <div className="flex gap-3">
+          {/* Add social media icons here */}
+          <span className="text-cream-dark">Facebook</span>
+          <span className="text-cream-dark">Instagram</span>
         </div>
-      </footer>
+      </div>
+    </div>
+    <div className="border-t border-cream/20 py-4 text-center">
+      <p className="text-xs text-cream-dark">© 2026 Rasa. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 };
