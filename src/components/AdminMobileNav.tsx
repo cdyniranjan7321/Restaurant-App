@@ -19,7 +19,7 @@ const AdminMobileNav = () => {
       <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <UtensilsCrossed className="h-5 w-5 text-sidebar-primary" />
-          <span className="font-display text-base font-bold text-sidebar-foreground">La Maison Admin</span>
+          <span className="font-display text-base font-bold text-sidebar-foreground">Rasa Admin</span>
         </div>
         <Button variant="ghost" size="icon" onClick={() => setOpen(!open)} className="text-sidebar-foreground">
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

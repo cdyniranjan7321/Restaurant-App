@@ -15,7 +15,7 @@ const AdminSidebar = () => {
     <aside className="fixed left-0 top-0 z-40 hidden h-screen w-64 flex-col border-r border-sidebar-border bg-sidebar lg:flex">
       <div className="flex items-center gap-2 border-b border-sidebar-border px-6 py-5">
         <UtensilsCrossed className="h-6 w-6 text-sidebar-primary" />
-        <span className="font-display text-lg font-bold text-sidebar-foreground">La Maison</span>
+        <span className="font-display text-lg font-bold text-sidebar-foreground">Rasa</span>
         <span className="ml-1 rounded bg-sidebar-accent px-2 py-0.5 text-[10px] font-semibold text-sidebar-primary">ADMIN</span>
       </div>
       <nav className="flex-1 space-y-1 px-3 py-4">
