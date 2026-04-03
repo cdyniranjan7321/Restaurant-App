@@ -137,25 +137,6 @@ const Index = () => {
       </div>
     </section>
 
-            {/* Newsletter / Offers Section */}
-              <section className="py-16 bg-primary text-primary-foreground">
-               <div className="container mx-auto px-4 text-center lg:px-8">
-                <h2 className="font-display text-3xl font-bold mb-3">Get 10% Off Your First Order</h2>
-                 <p className="mb-6 opacity-90">Subscribe to receive exclusive offers and updates</p>
-                  <form className="flex max-w-md mx-auto flex-col gap-3 sm:flex-row">
-                   <input 
-                     type="email" 
-                     placeholder="Enter your email" 
-                     className="flex-1 rounded-lg px-4 py-2 text-foreground"
-                     required
-                    />
-                   <Button type="submit" variant="secondary" className="whitespace-nowrap">
-                      Subscribe
-                   </Button>
-                  </form>
-              </div>
-             </section>
-
               {/* Location & Hours Section */}
              <section className="py-16">
                <div className="container mx-auto px-4 lg:px-8">
