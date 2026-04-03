@@ -1,5 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
-import { LayoutDashboard, UtensilsCrossed, ClipboardList, Settings, ArrowLeft } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { LayoutDashboard, UtensilsCrossed, ClipboardList, Settings, ArrowLeft, LogOut } from "lucide-react";
+import { useAuth } from "@/context/AuthContext";
+import { Button } from "@/components/ui/button";
 
 const adminLinks = [
   { to: "/admin", icon: LayoutDashboard, label: "Dashboard" },
@@ -10,6 +12,13 @@ const adminLinks = [
 
 const AdminSidebar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/admin-login');
+  };
 
   return (
     <aside className="fixed left-0 top-0 z-40 hidden h-screen w-64 flex-col border-r border-sidebar-border bg-sidebar lg:flex">
@@ -37,10 +46,20 @@ const AdminSidebar = () => {
           );
         })}
       </nav>
-      <div className="border-t border-sidebar-border px-3 py-4">
-        <Link to="/" className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground transition-colors hover:bg-sidebar-accent/50 hover:text-sidebar-primary">
+      <div className="border-t border-sidebar-border px-3 py-4 space-y-2">
+        <Link
+          to="/"
+          className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground transition-colors hover:bg-sidebar-accent/50 hover:text-sidebar-primary"
+        >
           <ArrowLeft className="h-4 w-4" /> Back to Restaurant
         </Link>
+        <Button
+          variant="ghost"
+          className="w-full justify-start gap-2 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground transition-colors hover:bg-sidebar-accent/50 hover:text-destructive"
+          onClick={handleLogout}
+        >
+          <LogOut className="h-4 w-4" /> Logout
+        </Button>
       </div>
     </aside>
   );

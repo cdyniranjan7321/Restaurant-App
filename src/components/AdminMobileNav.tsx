@@ -1,7 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
-import { LayoutDashboard, UtensilsCrossed, ClipboardList, Settings, ArrowLeft, Menu, X } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { LayoutDashboard, UtensilsCrossed, ClipboardList, Settings, ArrowLeft, Menu, X, LogOut } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useAuth } from "@/context/AuthContext";
 
 const adminLinks = [
   { to: "/admin", icon: LayoutDashboard, label: "Dashboard" },
@@ -13,6 +14,13 @@ const adminLinks = [
 const AdminMobileNav = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const { logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/admin-login');
+  };
 
   return (
     <div className="sticky top-0 z-40 border-b border-border bg-sidebar lg:hidden">
@@ -39,9 +47,22 @@ const AdminMobileNav = () => {
               <l.icon className="h-4 w-4" /> {l.label}
             </Link>
           ))}
-          <Link to="/" onClick={() => setOpen(false)} className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground hover:bg-sidebar-accent/50">
+          <Link
+            to="/"
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground hover:bg-sidebar-accent/50"
+          >
             <ArrowLeft className="h-4 w-4" /> Back to Restaurant
           </Link>
+          <button
+            onClick={() => {
+              handleLogout();
+              setOpen(false);
+            }}
+            className="w-full flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-sidebar-foreground hover:bg-sidebar-accent/50 hover:text-destructive"
+          >
+            <LogOut className="h-4 w-4" /> Logout
+          </button>
         </nav>
       )}
     </div>
