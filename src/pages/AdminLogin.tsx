@@ -70,11 +70,13 @@ const AdminLogin = () => {
                 className="border-gray-300"
               />
             </div>
+            {/* 
             <div className="rounded-lg bg-muted p-3 text-sm">
               <p className="font-semibold mb-1">Demo Credentials:</p>
               <p className="text-muted-foreground">Email: admin@rasa.com</p>
               <p className="text-muted-foreground">Password: admin123</p>
             </div>
+            */}
           </CardContent>
           <CardFooter>
             <Button type="submit" className="w-full" disabled={isLoading} size="lg">
