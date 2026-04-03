@@ -16,6 +16,7 @@ import AdminOrders from "./pages/AdminOrders";
 import AdminSettings from "./pages/AdminSettings";
 import AdminLogin from "./pages/AdminLogin";
 import NotFound from "./pages/NotFound";
+import Reservation from "./pages/Reservation";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
                 <Route path="/" element={<Index />} />
                 <Route path="/menu" element={<MenuPage />} />
                 <Route path="/cart" element={<CartPage />} />
+                <Route path="/reservation" element={<Reservation />} /> {/* Add this route */}
                 
                 {/* Admin Login - Public */}
                 <Route path="/admin-login" element={<AdminLogin />} />

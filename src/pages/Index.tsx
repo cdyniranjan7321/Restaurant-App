@@ -202,7 +202,7 @@ const Index = () => {
         <h4 className="font-semibold mb-2">Quick Links</h4>
         <ul className="space-y-1 text-sm text-cream-dark">
           <li><Link to="/menu" className="hover:text-cream">Menu</Link></li>
-          <li><Link to="/menu" className="hover:text-cream">Reservations</Link></li>
+          <li><Link to="/reservation" className="hover:text-cream">Reservations</Link></li>
           <li><Link to="/contact" className="hover:text-cream">Contact</Link></li>
         </ul>
       </div>
