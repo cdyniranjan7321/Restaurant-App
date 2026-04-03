@@ -189,16 +189,6 @@ const Index = () => {
   </div>
 </section>
 
-     {/* Quick Order Online Banner( For delivery ) */}
-  <div className="fixed bottom-4 right-4 z-40 md:hidden">
-     <Button className="rounded-full shadow-lg bg-primary hover:bg-primary/90">
-        <Link to="/menu" className="flex items-center gap-2">
-        <UtensilsCrossed className="h-4 w-4" />
-          Order Online
-        </Link>
-    </Button>
-   </div>
-
       {/* Footer */}
       <footer className="bg-gradient-dark py-12 text-cream">
         <div className="container mx-auto px-4 text-center lg:px-8">
